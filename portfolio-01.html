@@ -46,55 +46,19 @@
   </nav>
 
   <main id="main">
-
     <section>
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-10" data-aos="fade-up">
             <h4>Predict Loan Defaulter Using Machine Learning</h4>
-            <!-- ======= Testimonials Section ======= -->
-            <section class="pt-0">
-              <div class="container">
-
-                <div class="owl-carousel testimonial-carousel">
-
-                  <div class="testimonial-wrap">
-                    <div class="testimonial">
-                      <img src="assets/img/person_1.jpg" alt="Image" class="img-fluid">
-                      <blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
-                          officiis
-                          explicabo inventore.</p>
-                      </blockquote>
-                      <p>&mdash; Jean Hicks</p>
-                    </div>
-                  </div>
-
-                  <div class="testimonial-wrap">
-                    <div class="testimonial">
-                      <img src="assets/img/person_2.jpg" alt="Image" class="img-fluid">
-                      <blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
-                          officiis
-                          explicabo inventore.</p>
-                      </blockquote>
-                      <p>&mdash; Chris Stanworth</p>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-            </section><!-- End Testimonials Section -->
             <div class="sticky-content">
-              <p class="mb-4"><span class="heading">Business Problem</span></p>
-
+              <p class="mb-4"><span class="normal">Business Problem</span></p>
               <div>
                 <p>Build a machine learning model that predicts if someone might be a defaulter or a non-defaulter.</p>
               </div>
 
-              <p class="mb-4 text-muted"><a
-                  href="https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)">Data source:
+              <p class="normal"><a href="https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)">Data
+                  source:
                   https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)</a>
               <table width=100% border=0 cellpadding=2>
                 <tr>
@@ -102,7 +66,6 @@
                     <table>
                       <tr>
                         <td valign=top>
-                         
                           <p class="normal"><b>Abstract</b>: This dataset classifies people described by a set of
                             attributes as good or bad credit risks. Comes in two formats (one all numeric). Also comes
                             with a cost matrix</p>
@@ -198,7 +161,7 @@
                             </ul>
                           </div>
                           <div class="col-lg-4">
-                            <h4 class="h4 mb-3"></h4>
+                            <h4 class="h4 mb-3">Independant variables</h4>
                             <ul class="list-unstyled list-line mb-5">
                               <li>amount</li>
                               <li>savings_balance</li>
@@ -208,7 +171,7 @@
                             </ul>
                           </div>
                           <div class="col-lg-4">
-                            <h4 class="h4 mb-3"></h4>
+                            <h4 class="h4 mb-3">Independant variables</h4>
                             <ul class="list-unstyled list-line mb-5">
                               <li>years_at_residence</li>
                               <li>age</li>
@@ -236,6 +199,7 @@
                           <div class="col-lg-4">
                             <h4 class="h4 mb-3">Data Science Concepts</h4>
                             <ul class="list-unstyled list-line mb-5">
+                              <li>Exploratory Data Analysis</li>
                               <li>Regularization/Reducing Over fitting</li>
                               <li>Bagging & Boosting</li>
                               <li>Random Forest Classifier</li>
@@ -248,20 +212,80 @@
                     </div>
                     <h4 class="h4 mb-3">What I did</h4>
                     <ul class="list-unstyled list-line mb-5">
-                      <li>Design</li>
-                      <li>HTML5/CSS3</li>
-                      <li>CMS</li>
-                      <li>Logo</li>
-                    </ul>
-                    <h4 class="h4 mb-3">Learning</h4>
-                    <ul class="list-unstyled list-line mb-5">
-                      <li>Design</li>
-                      <li>HTML5/CSS3</li>
-                      <li>CMS</li>
-                      <li>Logo</li>
-                    </ul>
+                      <li>See hows data looks, is it a problem that can be answered using machine learning?</li>
+                      <li>Under exploratory data analysis, see data's nature</li>
+                      <li>Create a DECISION TREE MODEL and visualize tree at <a
+                          href="http://webgraphviz.com">http://webgraphviz.com</a></li>
+                      <li>As always DECISION TREE overfit, please find accuracy as below
+                        <ul class="mb-5">
+                          <li>
+                            Train data accuracy: 100%
+                          </li>
+                          <li>Test data accuracy: 69.33%</li>
+                          <li>So I tried regularization to minimize overfit, please find accuracy as below</li>
+                          <ul class="mb-5">
+                            <li>
+                              Train data accuracy: 75.28%
+                            </li>
+                            <li>Test data accuracy: 74.33%</li>
+                          </ul>
+                          <li>Lets see which are top five important features</li>
+                          <table>
+                            <thead>
+                              <th></th>
+                              <th>Imp</th>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>checking_balance</td>
+                                <td>0.492510</td>
+                              </tr>
+                              <tr>
+                                <td>months_loan_duration</td>
+                                <td>0.169806</td>
+                              </tr>
+                              <tr>
+                                <td>credit_history</td>
+                                <td>0.166109</td>
+                              </tr>
+                              <tr>
+                                <td>savings_balance</td>
+                                <td>0.064467</td>
+                              </tr>
+                              <tr>
+                                <td>purpose_business</td>
+                                <td>0.051129</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <li></li>
+                          <li></li>
+                        </ul>
 
+                        <ul class="list-unstyled list-line mb-5">
+                          <li></li>
+                          <li></li>
+                        </ul>
 
+                    </ul>
+                    <table style="width:100%">
+                      <tr>
+                        <th>Random Forest Classifier Confusion Matrix's Heat Map</th>
+                        <th>><img src="assets/img/portfolio-00-00.jpg" alt="Image"></th>
+                      </tr>
+                      <tr>
+                        <th>Random Forest Classifier (With Bagging) Confusion Matrix's Heat Map</th>
+                        <th>><img src="assets/img/portfolio-00-01.jpg" alt="Image"></th>
+                      </tr>
+                      <tr>
+                        <th>Random Forest Classifier (With ADA Boosting) Confusion Matrix's Heat Map</th>
+                        <th>><img src="assets/img/portfolio-00-02.jpg" alt="Image"></th>
+                      </tr>
+                      <tr>
+                        <th>Random Forest Classifier (With XG Boosting) Confusion Matrix's Heat Map</th>
+                        <th>><img src="assets/img/portfolio-00-03.jpg" alt="Image"></th>
+                      </tr>
+                    </table>
 
             </div>
             <p><a href="" class="readmore">Let me see code</a></p>
